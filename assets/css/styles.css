@@ -912,3 +912,199 @@ a:focus {
 	justify-content: center;
 	margin-top: 48px;
 }
+
+/* =========== Pricing =========== */
+.pricing {
+	margin-top: 130px;
+	padding: 86px 0;
+	background: #fff6ed;
+}
+
+.pricing-title {
+	--width: 100%;
+	text-align: center;
+}
+
+.pricing-desc {
+	--width: 709px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 24px;
+}
+
+.pricing-choice {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 38px;
+	width: 276px;
+	height: 56px;
+}
+
+.pricing-choice-sale {
+	position: absolute;
+	right: -113px;
+	bottom: 29.2px;
+}
+
+.group-check-pricing__label {
+	position: relative;
+	font-size: 0;
+	display: inline-block;
+	width: 276px;
+	height: 56px;
+	border-radius: 31px;
+	border: 1px solid rgb(255, 91, 46, 0.6);
+	cursor: pointer;
+}
+
+.group-check-pricing-text {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 50%;
+	color: #ff5b2e;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.group-check-pricing-bg {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100% + 2px);
+	width: calc(50% + 1px);
+	background: #ff5b2e;
+	border-radius: 31px;
+	left: -1px;
+	top: -1px;
+	transition: left 0.3s ease-in-out;
+}
+
+.group-check-pricing-bg::before,
+.group-check-pricing-bg::after {
+	display: inline-block;
+	color: #fff;
+	font-weight: 500;
+	transition: opacity 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.group-check-pricing-bg::before {
+	content: 'Monthly';
+	opacity: 1;
+	font-size: 1.6rem;
+}
+
+.group-check-pricing-bg::after {
+	content: 'Yearly';
+	opacity: 0;
+	font-size: 0;
+}
+
+.group-check-pricing:has(:checked) .group-check-pricing-bg {
+	left: 50%;
+}
+
+.group-check-pricing:has(:checked) .group-check-pricing-bg::after {
+	opacity: 1;
+	font-size: 1.6rem;
+}
+
+.group-check-pricing:has(:checked) .group-check-pricing-bg::before {
+	opacity: 0;
+	font-size: 0;
+}
+
+.pricing-option {
+	margin-top: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 44px;
+}
+
+.pricing-item {
+	width: 302px;
+	height: 465px;
+	border-radius: 20px;
+	background: #fff;
+	padding: 30px 28px 43px;
+	cursor: pointer;
+}
+
+.pricing-item:hover .btn__pricing {
+	background-color: #ff5b2e;
+	color: #fff;
+}
+
+.pricing-item__type {
+	display: block;
+	color: #ff5b2e;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.pricing-item__name {
+	display: block;
+	margin-top: 8px;
+	color: #3f4065;
+	font-family: 'Sora', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.pricing-item__price {
+	display: block;
+	margin-top: 24px;
+	color: #000958;
+	font-family: 'Sora', sans-serif;
+	font-size: 3.3rem;
+	font-weight: 700;
+}
+
+.btn__pricing {
+	margin-top: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 44px;
+	border-radius: 39px;
+	border: 1px solid rgba(255, 91, 46, 0.6);
+	color: #ff5b2e;
+	font-size: 1.6rem;
+	font-weight: 500;
+	background-color: #fff;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pricing-item__feature-list {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.pricing-item__feature-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #656689;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.pricing-item__feature-item::before {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url('../icons/tick-orange.svg') no-repeat;
+	background-position: center center;
+	opacity: 0.4;
+}
+
+.pricing-item__feature-item.active::before {
+	opacity: 1;
+}
