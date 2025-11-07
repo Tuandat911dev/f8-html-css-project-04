@@ -677,7 +677,7 @@ a:focus {
 	width: 95px;
 	height: 2px;
 	border-radius: 1px;
-	background: #ff5b2e;
+	background: var(--primary-color);
 	top: 0;
 	left: 0;
 	transition: left 0.3s ease-in-out;
@@ -787,7 +787,11 @@ a:focus {
 	width: 2px;
 	height: 22px;
 	border-radius: 1px;
-	background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+	background: linear-gradient(
+		90deg,
+		var(--primary-color) 0.39%,
+		#ffa187 100.29%
+	);
 }
 
 .service-item-desc {
@@ -963,7 +967,7 @@ a:focus {
 	justify-content: center;
 	height: 100%;
 	width: 50%;
-	color: #ff5b2e;
+	color: var(--primary-color);
 	font-size: 1.6rem;
 	font-weight: 500;
 }
@@ -975,7 +979,7 @@ a:focus {
 	justify-content: center;
 	height: calc(100% + 2px);
 	width: calc(50% + 1px);
-	background: #ff5b2e;
+	background: var(--primary-color);
 	border-radius: 31px;
 	left: -1px;
 	top: -1px;
@@ -1034,13 +1038,13 @@ a:focus {
 }
 
 .pricing-item:hover .btn__pricing {
-	background-color: #ff5b2e;
+	background-color: var(--primary-color);
 	color: #fff;
 }
 
 .pricing-item__type {
 	display: block;
-	color: #ff5b2e;
+	color: var(--primary-color);
 	font-size: 1.2rem;
 	font-weight: 400;
 }
@@ -1072,7 +1076,7 @@ a:focus {
 	height: 44px;
 	border-radius: 39px;
 	border: 1px solid rgba(255, 91, 46, 0.6);
-	color: #ff5b2e;
+	color: var(--primary-color);
 	font-size: 1.6rem;
 	font-weight: 500;
 	background-color: #fff;
@@ -1107,4 +1111,157 @@ a:focus {
 
 .pricing-item__feature-item.active::before {
 	opacity: 1;
+}
+
+/* ============== Review ================ */
+.review {
+	margin-top: 53px;
+}
+
+.review-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 77px;
+}
+
+.review-btn-left,
+.review-btn-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 54px;
+	height: 54px;
+	border-radius: 54px;
+	border: 1.5px solid #ffd1c4;
+	color: var(--primary-color);
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+	transition: background-color 0.2s linear, color 0.2s linear,
+		border-color 0.2s linear;
+}
+
+.review-btn-left:hover,
+.review-btn-right:hover {
+	background-color: var(--primary-color);
+	box-shadow: 0 5px 27px 0 rgba(255, 91, 46, 0.3);
+	color: #fff;
+	border-color: var(--primary-color);
+}
+
+.review-list-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 370px;
+	width: 80%;
+	overflow-y: visible;
+	overflow-x: hidden;
+}
+
+.review-list {
+	position: relative;
+	width: inherit;
+	height: 350px;
+}
+
+.review-item {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 115px;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.review-item.last {
+	opacity: 0;
+	transform: translateX(-100%);
+}
+
+.review-item.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.review-item.next {
+	opacity: 0;
+	transform: translateX(100%);
+}
+
+.review-avatar {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: 274px;
+	height: 350px;
+	border-radius: 137px;
+}
+
+.review-avatar img {
+	max-width: 100%;
+	object-fit: cover;
+	border-radius: 137px;
+}
+
+.review-info {
+	flex: 0 0 auto;
+}
+
+.review-content {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+	max-width: 553px;
+	margin-top: 24px;
+}
+
+.review-name {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #282828;
+	font-family: 'Sora', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 34px;
+}
+
+.review-name::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	background: #000;
+	border-radius: 2px;
+}
+
+.navigation-wrapper {
+	margin-top: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.navigation-item {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	border: 1px solid var(--primary-color);
+	background-color: transparent;
+	cursor: pointer;
+	transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navigation-item.active {
+	width: 24px;
+	background-color: var(--primary-color);
 }
