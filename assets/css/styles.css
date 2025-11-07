@@ -1341,6 +1341,7 @@ a:focus {
 .blog-content-title {
 	--width: 340px;
 	margin-top: 28px;
+	line-height: 1.6;
 }
 
 .blog-sub-desc {
