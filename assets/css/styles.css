@@ -888,6 +888,10 @@ a:focus {
 	cursor: pointer;
 }
 
+.staff-item:hover .staff-img img {
+	transform: scale(1.05);
+}
+
 .staff-avatar-wrapper {
 	position: relative;
 	display: flex;
@@ -896,7 +900,13 @@ a:focus {
 }
 
 .staff-img-wrapper {
-	padding: 0 18px;
+	display: flex;
+	align-items: flex-end;
+	margin: 0 18px;
+	border-radius: 0 0 129.5px 129.5px;
+	height: 299px;
+	width: 234px;
+	overflow: hidden;
 }
 
 .staff-img {
@@ -906,6 +916,12 @@ a:focus {
 	width: 234px;
 	height: 266px;
 	border-radius: 129.5px;
+}
+
+.staff-img img {
+	max-width: 100%;
+	transition: transform 0.4s ease-in-out;
+	transform-origin: bottom center;
 }
 
 .staff-item:first-child .staff-img {
@@ -928,11 +944,11 @@ a:focus {
 }
 
 .staff-item:nth-child(odd) .staff-avatar-circle {
-	bottom: -2px;
+	bottom: 0px;
 }
 
 .staff-item:nth-child(even) .staff-avatar-circle {
-	top: -2px;
+	top: 33px;
 }
 
 .staff-avatar {
