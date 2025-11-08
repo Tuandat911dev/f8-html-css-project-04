@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<link
 			rel="apple-touch-icon"
 			sizes="57x57"
 			href="./assets/favicon/apple-icon-57x57.png"
@@ -130,7 +134,10 @@
 					<div class="hero-inner">
 						<figure class="hero-media">
 							<div class="hero-media--img-big">
-								<div class="hero-media--img-big__wrapper">
+								<div
+									class="hero-media--img-big__wrapper"
+									data-aos="zoom-in-right"
+								>
 									<img
 										src="./assets/images/hero-1.png"
 										alt=""
@@ -138,14 +145,17 @@
 								</div>
 							</div>
 							<div class="hero-media--img-small">
-								<div class="hero-media--img-small__wrapper">
+								<div
+									class="hero-media--img-small__wrapper"
+									data-aos="flip-down"
+								>
 									<img
 										src="./assets/images/hero-2.png"
 										alt=""
 									/>
 								</div>
 							</div>
-							<div class="hero-media--card">
+							<div class="hero-media--card" data-aos="fade-left">
 								<div class="hero-media--card-item">
 									<div class="hero-media--card-img">
 										<img
@@ -236,7 +246,7 @@
 								incididunt ut labore et dolore magna aliqua.
 							</p>
 
-							<div class="about-experience">
+							<div class="about-experience" data-aos="fade-up">
 								<div class="about-experience-item">
 									<span
 										class="about-experience-item__checkbox"
@@ -290,7 +300,10 @@
 						</section>
 						<figure class="about-media">
 							<div class="about-media-wrapper">
-								<div class="about-media-img">
+								<div
+									class="about-media-img"
+									data-aos="fade-left"
+								>
 									<img
 										src="./assets/images/about.png"
 										alt="Best Agency For Your Pet."
@@ -298,7 +311,7 @@
 								</div>
 							</div>
 
-							<div class="about-media-card">
+							<div class="about-media-card" data-aos="fade-left">
 								<div class="about-media-card-wrapper">
 									<strong class="about-media-card__year"
 										>20+</strong
@@ -318,7 +331,10 @@
 				<div class="container">
 					<div class="feature-inner">
 						<div class="feature-media">
-							<div class="feature-media-wrapper">
+							<div
+								class="feature-media-wrapper"
+								data-aos="fade-right"
+							>
 								<img
 									class="feature-media-icon-line"
 									src="./assets/icons/background-feature-1.svg"
@@ -343,7 +359,10 @@
 							</div>
 						</div>
 						<div class="feature-info">
-							<h2 class="section-title feature-info-title">
+							<h2
+								class="section-title feature-info-title"
+								data-aos="fade-up-left"
+							>
 								Taking A Vacation? So Is Your Pet.
 							</h2>
 							<p class="section-desc feature-info-desc">
@@ -430,14 +449,19 @@
 			<!-- Service -->
 			<section class="service" id="service">
 				<div class="container">
-					<p class="section-sub-title service-sub-title">
+					<p
+						class="section-sub-title service-sub-title"
+						data-aos="fade-up"
+					>
 						What we do for you?
 					</p>
-					<h2 class="section-title service-title">Our Services</h2>
+					<h2 class="section-title service-title" data-aos="fade-up">
+						Our Services
+					</h2>
 
 					<div class="service-wrapper">
 						<div class="service-media-wrapper">
-							<div class="service-img">
+							<div class="service-img" data-aos="flip-right">
 								<img
 									src="./assets/images/service.png"
 									alt="our service"
@@ -553,12 +577,17 @@
 			<!-- Staff -->
 			<section class="staff">
 				<div class="container">
-					<p class="section-sub-title staff-sub-title">
+					<p
+						class="section-sub-title staff-sub-title"
+						data-aos="fade-up"
+					>
 						Pet Care Staff
 					</p>
-					<h2 class="section-title staff-title">Meet Our Groomers</h2>
+					<h2 class="section-title staff-title" data-aos="fade-up">
+						Meet Our Groomers
+					</h2>
 
-					<div class="staff-list">
+					<div class="staff-list" data-aos="fade-up">
 						<article class="staff-item">
 							<div class="staff-avatar-wrapper">
 								<div class="staff-img-wrapper">
@@ -660,14 +689,16 @@
 			<!-- Pricing -->
 			<section class="pricing">
 				<div class="container">
-					<h2 class="section-title pricing-title">The Best Choice</h2>
-					<p class="section-desc pricing-desc">
+					<h2 class="section-title pricing-title" data-aos="fade-up">
+						The Best Choice
+					</h2>
+					<p class="section-desc pricing-desc" data-aos="fade-up">
 						We offer long-term and short-term boarding. Every dog
 						has its own private, spacious room and daily individual
 						time in our large play yard.
 					</p>
 
-					<div class="pricing-choice">
+					<div class="pricing-choice" data-aos="flip-up">
 						<img
 							src="./assets/icons/sale.svg"
 							alt=""
@@ -696,7 +727,7 @@
 						</div>
 					</div>
 
-					<div class="pricing-option">
+					<div class="pricing-option" data-aos="fade-right">
 						<div class="pricing-item">
 							<span class="pricing-item__type">Basic</span>
 							<strong class="pricing-item__name">Day care</strong>
@@ -820,7 +851,7 @@
 							</svg>
 						</button>
 
-						<div class="review-list-wrapper">
+						<div class="review-list-wrapper" data-aos="fade-right">
 							<div class="review-list">
 								<article class="review-item last">
 									<div
@@ -945,9 +976,11 @@
 			<section class="blog">
 				<div class="container">
 					<div class="blog-inner">
-						<h2 class="section-title">Our Blog</h2>
+						<h2 class="section-title" data-aos="fade-right">
+							Our Blog
+						</h2>
 
-						<div class="blog-view-all">
+						<div class="blog-view-all" data-aos="fade-up">
 							<p
 								class="section-desc blog-desc line-clamp"
 								style="--row: 2"
@@ -960,7 +993,7 @@
 						</div>
 					</div>
 
-					<div class="blog-list">
+					<div class="blog-list" data-aos="fade-up">
 						<a href="#!">
 							<div class="blog-item">
 								<div
@@ -1205,5 +1238,11 @@
 		<script src="./assets/js/review.js"></script>
 		<script src="./assets/js/navigation.js"></script>
 		<script src="./assets/js/feature.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				once: false,
+			});
+		</script>
 	</body>
 </html>
