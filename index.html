@@ -95,14 +95,22 @@
 					</a>
 
 					<nav class="header-nav">
-						<a href="#home" data="Home" class="nav-item nav-item__active"
+						<a
+							href="#home"
+							data="Home"
+							class="nav-item nav-item__active"
 							>Home</a
 						>
 						<a href="#about" data="About" class="nav-item">About</a>
-						<a href="#service" data="Services & Rates" class="nav-item"
+						<a
+							href="#service"
+							data="Services & Rates"
+							class="nav-item"
 							>Services & Rates</a
 						>
-						<a href="#review" data="Reviews" class="nav-item">Reviews</a>
+						<a href="#review" data="Reviews" class="nav-item"
+							>Reviews</a
+						>
 						<a href="#contact" data="Contact us" class="nav-item"
 							>Contact us</a
 						>
@@ -346,7 +354,10 @@
 
 							<div class="feature-info-wrapper">
 								<div class="feature-list">
-									<div class="feature-item active">
+									<div
+										class="feature-item active"
+										data-id="1"
+									>
 										<img
 											src="./assets/icons/pet-boarding.png"
 											alt="Pet Boarding"
@@ -356,7 +367,7 @@
 											>Pet Boarding</span
 										>
 									</div>
-									<div class="feature-item">
+									<div class="feature-item" data-id="2">
 										<img
 											src="./assets/icons/pet-daycare.png"
 											alt="Pet Daycare"
@@ -365,7 +376,7 @@
 											>Pet Daycare</span
 										>
 									</div>
-									<div class="feature-item">
+									<div class="feature-item" data-id="3">
 										<img
 											src="./assets/icons/pet-transport.png"
 											alt="Pet Transport"
@@ -380,9 +391,34 @@
 								</div>
 							</div>
 
-							<p class="section-sub-desc feature-info-sub-desc">
-								While you're on holiday, here's where your furry
-								friends will spend their time.
+							<p
+								class="section-sub-desc feature-info-sub-desc active line-clamp"
+								data-id="1"
+								style="--row: 2"
+							>
+								A safe and comfortable stay for your pets while
+								you’re away, with attentive care to ensure they
+								feel at home.
+							</p>
+
+							<p
+								class="section-sub-desc feature-info-sub-desc line-clamp"
+								data-id="2"
+								style="--row: 2"
+							>
+								Fun-filled care and play for your pets
+								throughout the day, keeping them happy, active,
+								and engaged.
+							</p>
+
+							<p
+								class="section-sub-desc feature-info-sub-desc line-clamp"
+								data-id="3"
+								style="--row: 2"
+							>
+								Reliable and stress-free pet pick-up and
+								drop-off service, ensuring your pets travel
+								safely and comfortably.
 							</p>
 
 							<a href="!#" class="feature-info-cta">View more</a>
@@ -695,9 +731,7 @@
 							<span class="pricing-item__type">Exclusive</span>
 							<strong class="pricing-item__name">2X Care</strong>
 							<strong class="pricing-item__price">$199</strong>
-							<a href="#!" class="btn__pricing"
-								>Purchase Now</a
-							>
+							<a href="#!" class="btn__pricing">Purchase Now</a>
 
 							<ul class="pricing-item__feature-list">
 								<li class="pricing-item__feature-item active">
@@ -727,9 +761,7 @@
 							<span class="pricing-item__type">Platinum</span>
 							<strong class="pricing-item__name">4X Care</strong>
 							<strong class="pricing-item__price">$299</strong>
-							<a href="#!" class="btn__pricing"
-								>Purchase Now</a
-							>
+							<a href="#!" class="btn__pricing">Purchase Now</a>
 
 							<ul class="pricing-item__feature-list">
 								<li class="pricing-item__feature-item active">
@@ -1172,5 +1204,6 @@
 
 		<script src="./assets/js/review.js"></script>
 		<script src="./assets/js/navigation.js"></script>
+		<script src="./assets/js/feature.js"></script>
 	</body>
 </html>

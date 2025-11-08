@@ -27,8 +27,6 @@ window.addEventListener('scroll', () => {
 	sections.forEach((section) => {
 		const top = section.offsetTop; // từ đỉnh phần tử đến document
 		const height = section.offsetHeight; // chiểu cao của phẩn tử không margin
-
-		console.log(top, height);
 		const id = section.getAttribute('id');
 
 		// trừ 90px của navbar

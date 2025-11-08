@@ -694,12 +694,17 @@ a:focus {
 	background: var(--primary-color);
 	top: 0;
 	left: 0;
-	transition: left 0.3s ease-in-out;
+	transition: left 0.1s ease-in-out;
 }
 
 .feature-info-sub-desc {
 	--width: 391px;
 	margin-top: 36px;
+	display: none;
+}
+
+.feature-info-sub-desc.active {
+	display: -webkit-box;
 }
 
 .feature-info-cta {
