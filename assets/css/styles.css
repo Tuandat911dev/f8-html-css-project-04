@@ -34,6 +34,7 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	outline: none;
+	color: inherit;
 }
 
 a:focus {
@@ -1536,4 +1537,8 @@ a:focus {
 .footer-link-item:hover {
 	text-decoration: underline 1px solid #656689;
 	text-underline-offset: 2px;
+}
+
+.footer-link-item.static {
+	pointer-events: none;
 }
